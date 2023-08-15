@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <form action="#">
+        <input type="text" class="inputEL" value="">
+        <button onclick=" funt()">Add Names</button>
+    </form>
+
+    <ul class="names">
+        <li>spongebob</li>
+        <li>patrick</li>
+        <li>sandy</li>
+        <li>miss puff</li>
+        
+    </ul>
+    
+
+    <script>
+        
+        
+
+        
+    function funt()
+    {
+        let names = document.querySelector(".names");
+        // console.log(names);
+
+        inp=document.querySelector(".inputEL").value;
+
+        // console.log(inp)
+        let newli = document.createElement("li");
+        names.appendChild(newli);
+        let textNode = document.createTextNode(inp);
+        newli.appendChild(textNode)
+
+
+    }
+
+        
+
+
+    </script>
+</body>
+</html>
